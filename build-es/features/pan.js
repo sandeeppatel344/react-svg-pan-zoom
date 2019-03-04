@@ -63,7 +63,7 @@ export function startPanning(value, viewerX, viewerY) {
 }
 
 export function updatePanning(value, viewerX, viewerY, panLimit) {
-  panLimit = 300
+  panLimit = 100
   console.log("==--99",panLimit)
   if (value.mode !== MODE_PANNING) throw new Error('update pan not allowed in this mode ' + value.mode);
 
