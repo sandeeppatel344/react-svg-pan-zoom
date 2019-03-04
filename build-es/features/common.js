@@ -138,7 +138,8 @@ export function setPointOnViewerCenter(value, SVGPointX, SVGPointY, zoomLevel) {
       viewerHeight = value.viewerHeight;
 
 
-  var matrix = transform(translate(-SVGPointX + viewerWidth / 2, -SVGPointY + viewerHeight / 2), //4
+  var matrix = transform(
+  //translate(-SVGPointX + viewerWidth / 2, -SVGPointY + viewerHeight / 2), //4
   translate(SVGPointX, SVGPointY), //3
   scale(zoomLevel, zoomLevel), //2
   translate(-SVGPointX, -SVGPointY) //1
