@@ -110,6 +110,8 @@ export default function Toolbar(_ref) {
         name: 'fit-to-viewer',
         title: 'Fit to viewer',
         onClick: function onClick(event) {
+          var evt = new CustomEvent('resetWindow');
+          window.dispatchEvent(evt);
           return handleFit(event);
         } },
       React.createElement(IconFit, null)
