@@ -418,22 +418,7 @@ var ReactSVGPanZoom = function (_React$Component) {
           onChangeTool: function onChangeTool(tool) {
             return _this2.changeTool(tool);
           }
-        }, this.props.toolbarProps)),
-       /*  props.miniaturePosition === POSITION_NONE ? null : React.createElement(
-          CustomMiniature,
-          {
-            position: props.miniaturePosition,
-            value: value,
-            onChangeValue: function onChangeValue(value) {
-              return _this2.setValue(value);
-            },
-            SVGBackground: this.props.SVGBackground,
-            background: this.props.miniatureBackground,
-            width: this.props.miniatureWidth,
-            height: this.props.miniatureHeight
-          },
-          props.children.props.children
-        ) */
+        }, this.props.toolbarProps))
       );
     }
   }]);
